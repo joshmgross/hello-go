@@ -1,0 +1,4 @@
+runs:
+  using: 'script'
+  runtime: 'go run'
+  main: 'main.go'

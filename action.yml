@@ -1,3 +1,11 @@
+inputs:
+  name:
+    description: 'What is a name?'
+    required: true
+  phrase:
+    description: 'A phrase the name says'
+    required: true
+
 runs:
   using: 'script'
   runtime: 'go run'

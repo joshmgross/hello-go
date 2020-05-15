@@ -1,7 +1,16 @@
 package main
 
-import "fmt"
+import (
+    "fmt"
+    "os"
+)
 
 func main() {
-    fmt.Println("hello world")
+	name := os.Getenv("INPUT_NAME")
+	phrase := os.Getenv("INPUT_PHRASE")
+	fmt.Printf("%s says %s.\n", name, phrase)
+	
+
+	fmt.Printf("::set-output name=%s::%s\n", "name", "Go")
+	fmt.Printf("::set-output name=%s::%s\n", "phrase", "I'm a gopher")
 }
